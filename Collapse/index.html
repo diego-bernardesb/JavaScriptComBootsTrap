@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+       <h1>Collapse</h1><br>
+
+       <button 
+       class="btn btn-warning" 
+       data-bs-toggle="collapse"    
+       href="#secreto">Mostre mais</button> <!--funciona tanto para links,input e buttons(submit e comum)-->
+
+       <div 
+       style="padding-top: 20px;" 
+       class="collapse" 
+       id="secreto">   <!--Está classe faz o papel de esconder a mensagem-->
+           Mensagem secreta!!!
+       </div>
+
+    </div>
+    
+    <footer>
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $('#conteudoModal').on('show.bs.modal', function(event){
+                var button = $(event.relatedTarget)
+                var recipient = button.data('nome')
+                var modal = $(this)
+                modal.find('.modal-title').text('Mensagem para '+recipient)
+                modal.find('.modal-body input').val(recipient)
+                /*Este script faz o papel de receber o nome que está no buttom e fazer as conversões 
+                escritas para os modais, destá forma sem precisar criar novos modais, e reaproveitar
+                o já construido, porém se o modal precisar de novas funcionalidades eles precisará 
+                ser reescrito.*/
+            });
+        </script>
+    </footer>
+</body>
+</html>
