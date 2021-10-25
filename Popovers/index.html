@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popovers</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Popovers</h1>
+        <button 
+        type="button"
+        class="btn btn-primary" 
+        data-bs-toggle="popover" 
+        title="Popover Title"
+        data-bs-content="Aqui é o conteúdo do meu popover"
+        data-bs-placement="bottom">Meu popover</button>
+        <!-- data-toggle vincula o elemento ao popover, data-content é o conteudo a ser exibido -->
+    </div>
+   
+    <footer>
+        <!-- JS -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.js"></script>    
+    </footer>
+    <script>
+        //alert('estou aqui')
+        $(function(){
+            $('[data-bs-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html> 
