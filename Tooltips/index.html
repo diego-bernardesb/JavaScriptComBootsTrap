@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTips</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ToolTips</h1>
+
+        <!-- TOP -->
+        <button 
+        class="btn btn-success"
+        data-bs-toggle="tooltip"
+        title="Meu primeiro tooltip"
+        data-bs-placement="top">Meu tooltip
+        </button>
+
+        <!-- RIGHT -->
+        <button 
+        class="btn btn-success"
+        data-bs-toggle="tooltip"
+        title="Meu primeiro tooltip"
+        data-bs-placement="right">Meu tooltip
+        </button>
+
+        <!-- LEFT -->
+        <button 
+        class="btn btn-success"
+        data-bs-toggle="tooltip"
+        title="Meu primeiro tooltip"
+        data-bs-placement="left">Meu tooltip
+        </button>
+
+        <!-- BOTTOM -->
+        <button 
+        class="btn btn-success"
+        data-bs-toggle="tooltip"
+        title="Meu primeiro tooltip"
+        data-bs-placement="bottom">Meu tooltip
+        </button>
+    </div>
+
+    <footer>
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $(function(){
+                $('[data-bs-toggle="tooltip"]').tooltip()
+            });
+        </script>
+    </footer>
+</body>
+</html>
