@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+       <h1>Meus Modais</h1>
+
+        <button 
+            class="btn btn-secondary" 
+            data-bs-toggle="modal" 
+            data-bs-target="#conteudoModal"
+            data-nome="Sugestão">Sugestões
+        </button>
+        
+        <button 
+            class="btn btn-secondary" 
+            data-bs-toggle="modal" 
+            data-bs-target="#conteudoModal"
+            data-nome="Reclamações">Reclamações
+        </button>
+        
+        <button 
+            class="btn btn-secondary" 
+            data-bs-toggle="modal" 
+            data-bs-target="#conteudoModal"
+            data-nome="Agradecimentos">Agradecimentos
+        </button>
+
+        <!-- Modal -->
+        <div id="conteudoModal" class="modal fade">  <!--classe modal fade, esconde o modal para aparecer quando chamado-->
+            <div class="modal-dialog modal-xl"> <!-- centraliza na pagina a caixa modal-->
+                <div class="modal-content"> 
+                   
+                    <!-- Título -->
+                   <div class="modal-header">
+                       <h5 class="modal-title">Meu primeiro modal.</h5>
+                       <button 
+                            class="btn-close" 
+                            data-bs-dismiss="modal" 
+                            aria-label="close"></button>
+                   </div>
+                   
+                   <!-- Conteúdo -->
+                   <div class="modal-body">
+                        <div class="row">
+                           <!--<div class="col-6"> -->   <!--col-6 se referencia ao espaço de grid aceito, sendo que o total é 12, e quando ultrapassa essa quantidade ela quebra a linha-->
+                               <!-- <p>Meu primeiro texto em um modal</p>
+                            </div>-->
+                            <div class="col-4">
+                                <span>Destinatário:</span>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" name="para" class="form-control">
+                            </div>
+                        </div><br>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <span>Mensagem:</span>
+                            </div>
+                            <div class="col-8">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                   </div>
+
+                   <!-- Rodapé -->
+                   <div class="modal-footer">
+                       <button 
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">Fechar                        
+                       </button>
+                       <button 
+                            class="btn btn-primary">Aceitar                        
+                       </button>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            $('#conteudoModal').on('show.bs.modal', function(event){
+                var button = $(event.relatedTarget)
+                var recipient = button.data('nome')
+                var modal = $(this)
+                modal.find('.modal-title').text('Mensagem para '+recipient)
+                modal.find('.modal-body input').val(recipient)
+                /*Este script faz o papel de receber o nome que está no buttom e fazer as conversões 
+                escritas para os modais, destá forma sem precisar criar novos modais, e reaproveitar
+                o já construido, porém se o modal precisar de novas funcionalidades eles precisará 
+                ser reescrito.*/
+            });
+        </script>
+    </footer>
+</body>
+</html>
