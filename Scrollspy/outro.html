@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Scrollspy</h2>  
+        <div class="row">
+            <div class="col-4">
+                <div id="livro" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#c1">Capítulo 1</a>
+                    <a class="list-group-item list-group-item-action" href="#c2">Capítulo 2</a>
+                    <a class="list-group-item list-group-item-action" href="#c3">Capítulo 3</a>
+                    <a class="list-group-item list-group-item-action" href="#c4">Capítulo 4</a>
+                </div>
+            </div>  
+            <div class="col-8">              
+                <div 
+                data-bs-spy="scroll" 
+                data-bs-target="#livro" 
+                data-bs-offset="0" 
+                style="position: relative; height: 500px; overflow: auto;" 
+                >
+                
+                    <h4 id="c1">Capítulo 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere pretium lectus eget tempus. Donec dapibus risus id faucibus convallis. Vivamus aliquet vel ipsum varius laoreet. Integer a lectus ex. Duis convallis felis ac tincidunt scelerisque. Duis risus lacus, convallis eget egestas fringilla, laoreet at nisl. Integer pharetra lorem cursus odio hendrerit, sed egestas lectus aliquam.
+                        Nullam non eros vulputate, rutrum mauris sit amet, sollicitudin justo. Nullam egestas est vitae rhoncus tincidunt. Duis finibus sem turpis, eu placerat lacus imperdiet at. Maecenas ut risus gravida, facilisis libero sit amet, rhoncus massa. Praesent sollicitudin tincidunt metus at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet, libero ut luctus sollicitudin, orci enim ultricies neque, non mollis leo nulla sed dolor. Mauris quam lacus, ultrices sit amet dolor sit amet, fermentum finibus mauris. Nunc venenatis mauris sit amet neque tincidunt, non faucibus felis tempor.</p>
+
+                        <h4 id="c2">Capítulo 2</h4>
+                    <p>Nullam non eros vulputate, rutrum mauris sit amet, sollicitudin justo. Nullam egestas est vitae rhoncus tincidunt. Duis finibus sem turpis, eu placerat lacus imperdiet at. Maecenas ut risus gravida, facilisis libero sit amet, rhoncus massa. Praesent sollicitudin tincidunt metus at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet, libero ut luctus sollicitudin, orci enim ultricies neque, non mollis leo nulla sed dolor. Mauris quam lacus, ultrices sit amet dolor sit amet, fermentum finibus mauris. Nunc venenatis mauris sit amet neque tincidunt, non faucibus felis tempor.
+                        Integer sollicitudin eros id sollicitudin euismod. Proin condimentum dignissim tortor, in fermentum metus. Vestibulum pulvinar lectus ac facilisis auctor. Suspendisse potenti. Ut eget commodo est. Etiam fermentum, lorem ac porta imperdiet, arcu turpis tempus enim, eget efficitur enim ipsum sed augue. Suspendisse malesuada risus quis pharetra accumsan. Sed convallis ultrices est, ac sagittis nulla ornare ac. In et imperdiet ante.</p>
+
+                        <h4 id="c3">Capítulo 3</h4>
+                    <p>Nullam non eros vulputate, rutrum mauris sit amet, sollicitudin justo. Nullam egestas est vitae rhoncus tincidunt. Duis finibus sem turpis, eu placerat lacus imperdiet at. Maecenas ut risus gravida, facilisis libero sit amet, rhoncus massa. Praesent sollicitudin tincidunt metus at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet, libero ut luctus sollicitudin, orci enim ultricies neque, non mollis leo nulla sed dolor. Mauris quam lacus, ultrices sit amet dolor sit amet, fermentum finibus mauris. Nunc venenatis mauris sit amet neque tincidunt, non faucibus felis tempor.
+                        Integer sollicitudin eros id sollicitudin euismod. Proin condimentum dignissim tortor, in fermentum metus. Vestibulum pulvinar lectus ac facilisis auctor. Suspendisse potenti. Ut eget commodo est. Etiam fermentum, lorem ac porta imperdiet, arcu turpis tempus enim, eget efficitur enim ipsum sed augue. Suspendisse malesuada risus quis pharetra accumsan. Sed convallis ultrices est, ac sagittis nulla ornare ac. In et imperdiet ante.</p>
+
+                        <h4 id="c4">Capítulo 4</h4>
+                    <p>Nullam non eros vulputate, rutrum mauris sit amet, sollicitudin justo. Nullam egestas est vitae rhoncus tincidunt. Duis finibus sem turpis, eu placerat lacus imperdiet at. Maecenas ut risus gravida, facilisis libero sit amet, rhoncus massa. Praesent sollicitudin tincidunt metus at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet, libero ut luctus sollicitudin, orci enim ultricies neque, non mollis leo nulla sed dolor. Mauris quam lacus, ultrices sit amet dolor sit amet, fermentum finibus mauris. Nunc venenatis mauris sit amet neque tincidunt, non faucibus felis tempor.
+                        Integer sollicitudin eros id sollicitudin euismod. Proin condimentum dignissim tortor, in fermentum metus. Vestibulum pulvinar lectus ac facilisis auctor. Suspendisse potenti. Ut eget commodo est. Etiam fermentum, lorem ac porta imperdiet, arcu turpis tempus enim, eget efficitur enim ipsum sed augue. Suspendisse malesuada risus quis pharetra accumsan. Sed convallis ultrices est, ac sagittis nulla ornare ac. In et imperdiet ante.Nullam non eros vulputate, rutrum mauris sit amet, sollicitudin justo. Nullam egestas est vitae rhoncus tincidunt. Duis finibus sem turpis, eu placerat lacus imperdiet at. Maecenas ut risus gravida, facilisis libero sit amet, rhoncus massa. Praesent sollicitudin tincidunt metus at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus aliquet, libero ut luctus sollicitudin, orci enim ultricies neque, non mollis leo nulla sed dolor. Mauris quam lacus, ultrices sit amet dolor sit amet, fermentum finibus mauris. Nunc venenatis mauris sit amet neque tincidunt, non faucibus felis tempor.
+                        Integer sollicitudin eros id sollicitudin euismod. Proin condimentum dignissim tortor, in fermentum metus. Vestibulum pulvinar lectus ac facilisis auctor. Suspendisse potenti. Ut eget commodo est. Etiam fermentum, lorem ac porta imperdiet, arcu turpis tempus enim, eget efficitur enim ipsum sed augue. Suspendisse malesuada risus quis pharetra accumsan. Sed convallis ultrices est, ac sagittis nulla ornare ac. In et imperdiet ante.</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <!--JS-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+</html>
